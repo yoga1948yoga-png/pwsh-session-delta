@@ -20,7 +20,7 @@ Validated on Windows ARM64 with PowerShell 7.6.5 and 7.6.6.
 
 Only these exact runtimes are qualified for command discovery. Other versions return RuntimeNotQualified for command observations. Other Windows architectures may be compatible but are unverified. Linux, macOS, WSL and Windows PowerShell 5.1 are outside scope. The manifest's PowerShellVersion=7.0 is a loading minimum, not a compatibility certification.
 
-This is an unpublished source project. Automated gates passed; a user-reported manual two-session check passed on Windows ARM64 / 7.6.6. See [evidence](docs/stage5-prepublication-audit.md). Version metadata is prepared for 0.1.0; no release or Gallery package has been published.
+This is an unpublished source project. Automated gates passed (including GitHub Actions); a user-reported manual two-session check passed on Windows ARM64 / 7.6.6. See [evidence](docs/stage5-prepublication-audit.md). The project has reached v0.1.0 feature freeze; no release or Gallery package has been published yet.
 
 ## Install from a local source checkout
 
@@ -124,7 +124,7 @@ New-Item -ItemType Directory -Path .\artifacts -Force | Out-Null
 
 You can instead pass -PesterManifest for an existing local Pester 5.9.0 installation; see [test instructions](tests/README.md). Tests use temporary fixtures. Positive controls deliberately exercise test fixtures in disposable processes; product negative controls do not execute diagnostic targets.
 
-The [CI workflow](.github/workflows/test.yml) pins PowerShell 7.6.6 and Pester 5.9.0 on Windows ARM64. It has not run on GitHub yet. Hosted Windows runners are elevated, so non-administrator behavior and manual real-session verification remain local release gates even if CI passes.
+The [CI workflow](.github/workflows/test.yml) pins PowerShell 7.6.6 and Pester 5.9.0 on Windows ARM64, and successfully passes on GitHub Actions. Hosted Windows runners are elevated, so non-administrator behavior and manual real-session verification remain local release gates even if CI passes.
 
 ## Contributing
 
