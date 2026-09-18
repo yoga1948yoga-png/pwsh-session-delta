@@ -1,0 +1,20 @@
+# Local diagnostic artifacts and comparison secrets must not be committed.
+/artifacts/
+/snapshots/
+/reports/
+*.snapshot.json
+*.report.json
+*.report.md
+*.key
+*.key.json
+*.privacy-context.json
+TestResults*.xml
+coverage*.xml
+redaction-v*.id
+*.tmp
+*.log
+*.trx
+/test-results/
+/coverage/
+# Reviewed synthetic examples and sanitized evidence under docs/ remain visible.
+# These patterns are safeguards, not a substitute for reviewing git diff.

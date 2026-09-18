@@ -1,0 +1,260 @@
+{
+  "comparisonSchemaVersion": 1,
+  "reference": {
+    "snapshotSchemaVersion": 1,
+    "discoveryPolicyVersion": 1,
+    "privacy": {
+      "keyId": "567777d6d870567a0a7488fe949a4092b967ce9a61d801b0e8fadfab3e966f17",
+      "redactionScheme": "HMAC-SHA256",
+      "redactionVersion": 1
+    }
+  },
+  "difference": {
+    "snapshotSchemaVersion": 1,
+    "discoveryPolicyVersion": 1,
+    "privacy": {
+      "keyId": "567777d6d870567a0a7488fe949a4092b967ce9a61d801b0e8fadfab3e966f17",
+      "redactionScheme": "HMAC-SHA256",
+      "redactionVersion": 1
+    }
+  },
+  "summary": {
+    "status": "Confirmed difference",
+    "confirmedDifferences": 2,
+    "noObservedDifferences": 7,
+    "unableToDetermine": 1
+  },
+  "fieldResults": [
+    {
+      "category": "powerShellVersion",
+      "status": "Confirmed difference",
+      "reference": {
+        "status": "Confirmed observation",
+        "reasonCode": null
+      },
+      "difference": {
+        "status": "Confirmed observation",
+        "reasonCode": null
+      },
+      "reasonCode": "ValuesDifferent",
+      "explanation": "The recorded values differ under this comparison policy.",
+      "details": {
+        "referenceValue": "7.6.5",
+        "differenceValue": "7.6.4"
+      }
+    },
+    {
+      "category": "workingDirectory",
+      "status": "No observed difference",
+      "reference": {
+        "status": "Confirmed observation",
+        "reasonCode": null
+      },
+      "difference": {
+        "status": "Confirmed observation",
+        "reasonCode": null
+      },
+      "reasonCode": "ValuesEqual",
+      "explanation": "The recorded values are equal under this comparison policy.",
+      "details": {
+        "referenceValue": {
+          "kind": "path",
+          "digest": "b225974e1d9255deb8260dae81cac7276c459673699066fdd3d8c7cd0396c73d"
+        },
+        "differenceValue": {
+          "kind": "path",
+          "digest": "b225974e1d9255deb8260dae81cac7276c459673699066fdd3d8c7cd0396c73d"
+        }
+      }
+    },
+    {
+      "category": "path",
+      "status": "Unable to determine",
+      "reference": {
+        "status": "Confirmed observation",
+        "reasonCode": null
+      },
+      "difference": {
+        "status": "Unable to determine",
+        "reasonCode": "EnvironmentReadFailed"
+      },
+      "reasonCode": "ObservationUnknown",
+      "explanation": "At least one observation is incomplete.",
+      "details": null
+    },
+    {
+      "category": "psModulePath",
+      "status": "No observed difference",
+      "reference": {
+        "status": "No observed value",
+        "reasonCode": null
+      },
+      "difference": {
+        "status": "No observed value",
+        "reasonCode": null
+      },
+      "reasonCode": "BothAbsent",
+      "explanation": "Both observations explicitly record absence.",
+      "details": null
+    },
+    {
+      "category": "pathExt",
+      "status": "No observed difference",
+      "reference": {
+        "status": "Confirmed observation",
+        "reasonCode": null
+      },
+      "difference": {
+        "status": "Confirmed observation",
+        "reasonCode": null
+      },
+      "reasonCode": "ValuesEqual",
+      "explanation": "The recorded values are equal under this comparison policy.",
+      "details": {
+        "referenceValue": [
+          ".EXE",
+          ".CMD",
+          ".BAT"
+        ],
+        "differenceValue": [
+          ".EXE",
+          ".CMD",
+          ".BAT"
+        ]
+      }
+    },
+    {
+      "category": "moduleAutoLoadingPreference",
+      "status": "No observed difference",
+      "reference": {
+        "status": "Confirmed observation",
+        "reasonCode": null
+      },
+      "difference": {
+        "status": "Confirmed observation",
+        "reasonCode": null
+      },
+      "reasonCode": "ValuesEqual",
+      "explanation": "The recorded values are equal under this comparison policy.",
+      "details": {
+        "referenceValue": {
+          "effectiveValue": "All",
+          "explicitlySet": false
+        },
+        "differenceValue": {
+          "effectiveValue": "All",
+          "explicitlySet": false
+        }
+      }
+    }
+  ],
+  "commandResults": [
+    {
+      "queryDigest": "7180b5f042fbab1e234209ac58ae449e95746ce8366b5f03f754e1845c27b9c3",
+      "referenceOccurrences": 1,
+      "differenceOccurrences": 1,
+      "results": [
+        {
+          "category": "internalCandidates",
+          "status": "No observed difference",
+          "reference": {
+            "status": "No observed value",
+            "reasonCode": null
+          },
+          "difference": {
+            "status": "No observed value",
+            "reasonCode": null
+          },
+          "reasonCode": "BothAbsent",
+          "explanation": "Both observations explicitly record absence.",
+          "details": null
+        },
+        {
+          "category": "externalCandidates",
+          "status": "Confirmed difference",
+          "reference": {
+            "status": "Confirmed observation",
+            "reasonCode": null
+          },
+          "difference": {
+            "status": "Confirmed observation",
+            "reasonCode": null
+          },
+          "reasonCode": "ValuesDifferent",
+          "explanation": "The recorded values differ under this comparison policy.",
+          "details": {
+            "referenceOnly": [
+              {
+                "identity": {
+                  "name": {
+                    "digest": "1e62a4db7ddba5a951f02dd710523bcef10ee87a9098b204b281c6bff7a7bfc1",
+                    "kind": "command"
+                  },
+                  "path": {
+                    "digest": "e0064f67a5df0d8d14738d5d41876831c3201341f76c4b659b2c02d645d73247",
+                    "kind": "path"
+                  },
+                  "type": "Application"
+                },
+                "count": 1
+              }
+            ],
+            "differenceOnly": [
+              {
+                "identity": {
+                  "name": {
+                    "digest": "1e62a4db7ddba5a951f02dd710523bcef10ee87a9098b204b281c6bff7a7bfc1",
+                    "kind": "command"
+                  },
+                  "path": {
+                    "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "kind": "path"
+                  },
+                  "type": "Application"
+                },
+                "count": 1
+              }
+            ],
+            "both": []
+          }
+        },
+        {
+          "category": "aliases",
+          "status": "No observed difference",
+          "reference": {
+            "status": "No observed value",
+            "reasonCode": null
+          },
+          "difference": {
+            "status": "No observed value",
+            "reasonCode": null
+          },
+          "reasonCode": "BothAbsent",
+          "explanation": "Both observations explicitly record absence.",
+          "details": null
+        },
+        {
+          "category": "functions",
+          "status": "No observed difference",
+          "reference": {
+            "status": "No observed value",
+            "reasonCode": null
+          },
+          "difference": {
+            "status": "No observed value",
+            "reasonCode": null
+          },
+          "reasonCode": "BothAbsent",
+          "explanation": "Both observations explicitly record absence.",
+          "details": null
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Differences are observations, not proof of causation.",
+    "Candidate-only policy: no execution winner is inferred.",
+    "Query identities are case-sensitive input HMACs in snapshot schema 1. Unmatched queries are not candidate differences.",
+    "Presence and absence can be compared without comparing private values. Unpaired queries cannot be associated across incompatible keys."
+  ]
+}

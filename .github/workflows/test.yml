@@ -1,0 +1,48 @@
+name: Windows ARM64 tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: windows-11-arm
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Prepare pinned test dependencies
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $psZip = Join-Path $env:RUNNER_TEMP 'powershell-7.6.6.zip'
+          Invoke-WebRequest 'https://github.com/PowerShell/PowerShell/releases/download/v7.6.6/PowerShell-7.6.6-win-arm64.zip' -OutFile $psZip
+          if ((Get-FileHash $psZip -Algorithm SHA256).Hash -ne 'BBDE9DDA31D148415ECCB5FBE1638E6400A144187B006E5B3FD8EC2F39D781BE') { throw 'PowerShell hash mismatch' }
+          $psDir = Join-Path $env:RUNNER_TEMP 'pwsh-7.6.6'
+          Expand-Archive -LiteralPath $psZip -DestinationPath $psDir
+          $pesterZip = Join-Path $env:RUNNER_TEMP 'pester-5.9.0.zip'
+          Invoke-WebRequest 'https://www.powershellgallery.com/api/v2/package/Pester/5.9.0' -OutFile $pesterZip
+          if ((Get-FileHash $pesterZip -Algorithm SHA256).Hash -ne '5A0FD80B361600BF4BBD4C307C1FD01B17F11668BAB19E657ADD41B00AD22AB9') { throw 'Pester hash mismatch' }
+          $pesterDir = Join-Path $env:RUNNER_TEMP 'Pester/5.9.0'
+          Expand-Archive -LiteralPath $pesterZip -DestinationPath $pesterDir
+          "PSD_TEST_PWSH=$psDir/pwsh.exe" >> $env:GITHUB_ENV
+          "PSD_TEST_PESTER=$pesterDir/Pester.psd1" >> $env:GITHUB_ENV
+      - name: Import and run all formal tests
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $code = @'
+          $ErrorActionPreference = 'Stop'
+          if ($PSVersionTable.PSVersion.ToString() -cne '7.6.6') { throw 'Wrong test runtime' }
+          if ([Runtime.InteropServices.RuntimeInformation]::ProcessArchitecture -ne 'Arm64') { throw 'Wrong architecture' }
+          $manifest = './src/PwshSessionDelta/PwshSessionDelta.psd1'
+          $null = Test-ModuleManifest $manifest
+          Import-Module $manifest -Force
+          $exports = @((Get-Module PwshSessionDelta).ExportedFunctions.Keys | Sort-Object)
+          if (($exports -join ',') -cne 'Compare-PwshSessionSnapshot,Export-PwshSessionSnapshot') { throw 'Unexpected exports' }
+          & ./tests/Invoke-Stage3Tests.ps1 -PesterManifest $env:PSD_TEST_PESTER -ResultPath (Join-Path $env:RUNNER_TEMP 'test-results.json') -AllowElevatedTestHost
+          '@
+          & $env:PSD_TEST_PWSH -NoProfile -NonInteractive -Command $code
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

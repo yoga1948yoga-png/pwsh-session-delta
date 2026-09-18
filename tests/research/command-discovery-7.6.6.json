@@ -1,0 +1,4887 @@
+{
+  "Experiment": "Stage 1.5 wildcard comparison",
+  "PowerShell": "7.6.6",
+  "Platform": "Windows",
+  "MeasuredQueries": 152,
+  "SetupImports": [
+    "DeltaLoaded"
+  ],
+  "FinalMarkerCount": 1,
+  "AssertionsPassed": 447,
+  "KnownLimitation": "Escaped bracket external names miss existing files in both variants; never interpret that empty result as absence.",
+  "NativeExecutionEvidence": "No target invocation in query code; copied pwsh host only. No native process tracing/sentinel; not an independent proof of no executable launch.",
+  "Rows": [
+    {
+      "Name": "delta-alias",
+      "Pattern": "delta-alias*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-alias",
+      "Pattern": "delta-alias*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaFunctionProbe",
+      "Pattern": "Get-DeltaFunctionProbe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaFunctionProbe",
+      "Pattern": "Get-DeltaFunctionProbe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaLoadedProbe",
+      "Pattern": "Get-DeltaLoadedProbe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaLoadedProbe",
+      "Pattern": "Get-DeltaLoadedProbe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaUnloadedProbe",
+      "Pattern": "Get-DeltaUnloadedProbe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaUnloadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaUnloaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaUnloadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaUnloaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaUnloadedProbe",
+      "Pattern": "Get-DeltaUnloadedProbe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native.exe",
+      "Pattern": "delta-native.exe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native.exe",
+      "Pattern": "delta-native.exe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native",
+      "Pattern": "delta-native*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native",
+      "Pattern": "delta-native*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.cmd",
+      "Pattern": "delta-batch.cmd*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.cmd",
+      "Pattern": "delta-batch.cmd*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.bat",
+      "Pattern": "delta-batch.bat*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.bat",
+      "Pattern": "delta-batch.bat*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed.ps1",
+      "Pattern": "delta-mixed.ps1*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed.ps1",
+      "Pattern": "delta-mixed.ps1*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed",
+      "Pattern": "delta-mixed*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed",
+      "Pattern": "delta-mixed*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-missing",
+      "Pattern": "delta-missing*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-missing",
+      "Pattern": "delta-missing*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box]",
+      "Pattern": "delta`[box`]*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box]",
+      "Pattern": "delta`[box`]*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box].exe",
+      "Pattern": "delta`[box`].exe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box].exe",
+      "Pattern": "delta`[box`].exe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta*literal",
+      "Pattern": "delta`*literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta*literal",
+      "Pattern": "delta`*literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta?literal",
+      "Pattern": "delta`?literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta?literal",
+      "Pattern": "delta`?literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal",
+      "Pattern": "delta`[literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        },
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal",
+      "Pattern": "delta`[literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        },
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta]literal",
+      "Pattern": "delta`]literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta]literal",
+      "Pattern": "delta`]literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal]",
+      "Pattern": "delta`[literal`]*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal]",
+      "Pattern": "delta`[literal`]*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta`literal",
+      "Pattern": "delta``literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta`literal",
+      "Pattern": "delta``literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-alias",
+      "Pattern": "delta-alias*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-alias",
+      "Pattern": "delta-alias*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaFunctionProbe",
+      "Pattern": "Get-DeltaFunctionProbe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaFunctionProbe",
+      "Pattern": "Get-DeltaFunctionProbe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaLoadedProbe",
+      "Pattern": "Get-DeltaLoadedProbe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaLoadedProbe",
+      "Pattern": "Get-DeltaLoadedProbe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaUnloadedProbe",
+      "Pattern": "Get-DeltaUnloadedProbe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaUnloadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaUnloaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaUnloadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaUnloaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaUnloadedProbe",
+      "Pattern": "Get-DeltaUnloadedProbe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native.exe",
+      "Pattern": "delta-native.exe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native.exe",
+      "Pattern": "delta-native.exe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native",
+      "Pattern": "delta-native*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native",
+      "Pattern": "delta-native*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.cmd",
+      "Pattern": "delta-batch.cmd*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.cmd",
+      "Pattern": "delta-batch.cmd*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.bat",
+      "Pattern": "delta-batch.bat*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.bat",
+      "Pattern": "delta-batch.bat*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed.ps1",
+      "Pattern": "delta-mixed.ps1*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed.ps1",
+      "Pattern": "delta-mixed.ps1*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed",
+      "Pattern": "delta-mixed*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed",
+      "Pattern": "delta-mixed*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-missing",
+      "Pattern": "delta-missing*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-missing",
+      "Pattern": "delta-missing*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box]",
+      "Pattern": "delta`[box`]*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box]",
+      "Pattern": "delta`[box`]*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box].exe",
+      "Pattern": "delta`[box`].exe*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box].exe",
+      "Pattern": "delta`[box`].exe*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta*literal",
+      "Pattern": "delta`*literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta*literal",
+      "Pattern": "delta`*literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta?literal",
+      "Pattern": "delta`?literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta?literal",
+      "Pattern": "delta`?literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal",
+      "Pattern": "delta`[literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        },
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal",
+      "Pattern": "delta`[literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        },
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta]literal",
+      "Pattern": "delta`]literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta]literal",
+      "Pattern": "delta`]literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal]",
+      "Pattern": "delta`[literal`]*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal]",
+      "Pattern": "delta`[literal`]*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta`literal",
+      "Pattern": "delta``literal*",
+      "ListImported": false,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta`literal",
+      "Pattern": "delta``literal*",
+      "ListImported": true,
+      "PathOrder": "AB",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-alias",
+      "Pattern": "delta-alias*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-alias",
+      "Pattern": "delta-alias*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaFunctionProbe",
+      "Pattern": "Get-DeltaFunctionProbe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaFunctionProbe",
+      "Pattern": "Get-DeltaFunctionProbe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaLoadedProbe",
+      "Pattern": "Get-DeltaLoadedProbe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaLoadedProbe",
+      "Pattern": "Get-DeltaLoadedProbe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaUnloadedProbe",
+      "Pattern": "Get-DeltaUnloadedProbe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "Get-DeltaUnloadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaUnloaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaUnloadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaUnloaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaUnloadedProbe",
+      "Pattern": "Get-DeltaUnloadedProbe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native.exe",
+      "Pattern": "delta-native.exe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native.exe",
+      "Pattern": "delta-native.exe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native",
+      "Pattern": "delta-native*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native",
+      "Pattern": "delta-native*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.cmd",
+      "Pattern": "delta-batch.cmd*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.cmd",
+      "Pattern": "delta-batch.cmd*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.bat",
+      "Pattern": "delta-batch.bat*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.bat",
+      "Pattern": "delta-batch.bat*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed.ps1",
+      "Pattern": "delta-mixed.ps1*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed.ps1",
+      "Pattern": "delta-mixed.ps1*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed",
+      "Pattern": "delta-mixed*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed",
+      "Pattern": "delta-mixed*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-missing",
+      "Pattern": "delta-missing*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-missing",
+      "Pattern": "delta-missing*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box]",
+      "Pattern": "delta`[box`]*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box]",
+      "Pattern": "delta`[box`]*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box].exe",
+      "Pattern": "delta`[box`].exe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box].exe",
+      "Pattern": "delta`[box`].exe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta*literal",
+      "Pattern": "delta`*literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta*literal",
+      "Pattern": "delta`*literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta?literal",
+      "Pattern": "delta`?literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta?literal",
+      "Pattern": "delta`?literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal",
+      "Pattern": "delta`[literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        },
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal",
+      "Pattern": "delta`[literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        },
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta]literal",
+      "Pattern": "delta`]literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta]literal",
+      "Pattern": "delta`]literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal]",
+      "Pattern": "delta`[literal`]*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal]",
+      "Pattern": "delta`[literal`]*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta`literal",
+      "Pattern": "delta``literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta`literal",
+      "Pattern": "delta``literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "EXE-CMD-BAT",
+      "Raw": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-alias",
+      "Pattern": "delta-alias*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-alias",
+      "Pattern": "delta-alias*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-alias",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaFunctionProbe",
+      "Pattern": "Get-DeltaFunctionProbe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaFunctionProbe",
+      "Pattern": "Get-DeltaFunctionProbe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaFunctionProbe",
+          "Type": "Function",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaLoadedProbe",
+      "Pattern": "Get-DeltaLoadedProbe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaLoadedProbe",
+      "Pattern": "Get-DeltaLoadedProbe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaLoadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaLoaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaUnloadedProbe",
+      "Pattern": "Get-DeltaUnloadedProbe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "Get-DeltaUnloadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaUnloaded"
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "Get-DeltaUnloadedProbe",
+          "Type": "Cmdlet",
+          "Path": null,
+          "Module": "DeltaUnloaded"
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "Get-DeltaUnloadedProbe",
+      "Pattern": "Get-DeltaUnloadedProbe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native.exe",
+      "Pattern": "delta-native.exe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native.exe",
+      "Pattern": "delta-native.exe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native",
+      "Pattern": "delta-native*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-native",
+      "Pattern": "delta-native*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-native.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-native.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-native.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.cmd",
+      "Pattern": "delta-batch.cmd*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.cmd",
+      "Pattern": "delta-batch.cmd*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.cmd",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.bat",
+      "Pattern": "delta-batch.bat*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-batch.bat",
+      "Pattern": "delta-batch.bat*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-batch.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-batch.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-batch.bat",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed.ps1",
+      "Pattern": "delta-mixed.ps1*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed.ps1",
+      "Pattern": "delta-mixed.ps1*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed",
+      "Pattern": "delta-mixed*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-mixed",
+      "Pattern": "delta-mixed*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.ps1",
+          "Type": "ExternalScript",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.ps1",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.bat",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.bat",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.cmd",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.cmd",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\B space 中文\\delta-mixed.exe",
+          "Module": ""
+        },
+        {
+          "Name": "delta-mixed.exe",
+          "Type": "Application",
+          "Path": "<FIXTURE>\\A space 中文\\delta-mixed.exe",
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-missing",
+      "Pattern": "delta-missing*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta-missing",
+      "Pattern": "delta-missing*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box]",
+      "Pattern": "delta`[box`]*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box]",
+      "Pattern": "delta`[box`]*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[box]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box].exe",
+      "Pattern": "delta`[box`].exe*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[box].exe",
+      "Pattern": "delta`[box`].exe*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [],
+      "Accepted": [],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta*literal",
+      "Pattern": "delta`*literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta*literal",
+      "Pattern": "delta`*literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta*literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta?literal",
+      "Pattern": "delta`?literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta?literal",
+      "Pattern": "delta`?literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta?literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal",
+      "Pattern": "delta`[literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        },
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal",
+      "Pattern": "delta`[literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        },
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta]literal",
+      "Pattern": "delta`]literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta]literal",
+      "Pattern": "delta`]literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta]literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal]",
+      "Pattern": "delta`[literal`]*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta[literal]",
+      "Pattern": "delta`[literal`]*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta[literal]",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta`literal",
+      "Pattern": "delta``literal*",
+      "ListImported": false,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    },
+    {
+      "Name": "delta`literal",
+      "Pattern": "delta``literal*",
+      "ListImported": true,
+      "PathOrder": "BA",
+      "PathExtOrder": "BAT-CMD-EXE",
+      "Raw": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "Accepted": [
+        {
+          "Name": "delta`literal",
+          "Type": "Alias",
+          "Path": null,
+          "Module": ""
+        }
+      ],
+      "ModuleSetChanged": false,
+      "NewCodeMarkers": 0,
+      "MarkerBytesChanged": false
+    }
+  ]
+}

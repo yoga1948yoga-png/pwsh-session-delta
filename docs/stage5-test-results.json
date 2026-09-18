@@ -1,0 +1,478 @@
+{
+  "stage": "3",
+  "runKind": "Local release gate",
+  "environment": {
+    "powerShell": "7.6.6",
+    "pester": "5.9.0",
+    "windows": "Microsoft Windows 10.0.26200",
+    "osArchitecture": "Arm64",
+    "processArchitecture": "Arm64",
+    "elevated": false
+  },
+  "total": 102,
+  "pass": 102,
+  "fail": 0,
+  "skip": 0,
+  "evidence": {
+    "nativePositiveDetected": true,
+    "nativeNegativeDetected": false,
+    "nativeSnapshotProduced": true,
+    "CimCmdletsPositive": {
+      "afterModule": 1,
+      "type": "Cmdlet",
+      "beforeModule": 0,
+      "beforeAssembly": 0,
+      "afterAssembly": 1,
+      "source": "CimCmdlets"
+    },
+    "Microsoft.PowerShell.ThreadJobPositive": {
+      "beforeAssembly": 0,
+      "afterAssembly": 1,
+      "type": "Cmdlet",
+      "source": "Microsoft.PowerShell.ThreadJob",
+      "afterModule": 1,
+      "beforeModule": 0
+    },
+    "CimCmdletsNegative": {
+      "afterModule": 0,
+      "modulesUnchanged": true,
+      "beforeAssembly": 1,
+      "beforeModule": 0,
+      "afterAssembly": 1
+    },
+    "Microsoft.PowerShell.ThreadJobNegative": {
+      "beforeModule": 0,
+      "modulesUnchanged": true,
+      "afterModule": 0,
+      "afterAssembly": 0,
+      "beforeAssembly": 0
+    },
+    "differenceSummary": {
+      "status": "Confirmed difference",
+      "confirmedDifferences": 5,
+      "noObservedDifferences": 13,
+      "unableToDetermine": 0
+    },
+    "equalSummary": {
+      "status": "No observed difference",
+      "confirmedDifferences": 0,
+      "noObservedDifferences": 18,
+      "unableToDetermine": 0
+    },
+    "privacyArtifactCount": 24,
+    "privacyArtifactsPassed": true
+  },
+  "productionFilesUnchanged": true,
+  "releaseFixtureCleaned": true,
+  "finalOutputPrivacyScan": true,
+  "tests": [
+    {
+      "name": "A20 creates a 32-byte protected secret and versioned UTF-8 JSON",
+      "result": "Passed"
+    },
+    {
+      "name": "A01 captures an alias only while it exists without resolving it",
+      "result": "Passed"
+    },
+    {
+      "name": "A02 A03 hashes function source stably and does not expose or execute it",
+      "result": "Passed"
+    },
+    {
+      "name": "A04 A07 A08 A16 preserves PATH order duplicate entries spaces Chinese and empty entries",
+      "result": "Passed"
+    },
+    {
+      "name": "A06 distinguishes successful absence from unknown",
+      "result": "Passed"
+    },
+    {
+      "name": "A09 excludes original path command source and secret encodings",
+      "result": "Passed"
+    },
+    {
+      "name": "A11 discovers scripts and batch files without executing body or dynamicparam",
+      "result": "Passed"
+    },
+    {
+      "name": "A12 never autoloads an unloaded synthetic module and leaves loaded modules unchanged",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 a lookup exception produces unknown while other observations succeed",
+      "result": "Passed"
+    },
+    {
+      "name": "A14 keeps duplicate executable candidates but excludes prefix lookalikes",
+      "result": "Passed"
+    },
+    {
+      "name": "A15 repeated exports reuse keyId and stable command pseudonyms",
+      "result": "Passed"
+    },
+    {
+      "name": "A14 retains same-name alias and function independently of external candidates",
+      "result": "Passed"
+    },
+    {
+      "name": "A16 distinguishes missing versus empty process environment and preserves PSModulePath entries",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 preserves process paths and autoload preference",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 unavailable caller scope is unknown rather than absent",
+      "result": "Passed"
+    },
+    {
+      "name": "A18 treats wildcard syntax literally and marks external completeness unknown",
+      "result": "Passed"
+    },
+    {
+      "name": "A18 rejects unsupported command input without lookup",
+      "result": "Passed"
+    },
+    {
+      "name": "A18 rejects an unsafe external search path but retains internal observations",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 refuses to overwrite existing output and secret",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 fails closed for existing state without key or with corrupt key",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 rejects permissive ACL and simulated unreadable secret without replacement",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 leaves no final file when serialization fails",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 corrupt but otherwise protected secret fails closed",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 exclusive reader lock causes safe failure without replacement",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 same-length key corruption or a missing integrity marker fails closed",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 a real broad ACL on a test-only key is rejected and not repaired",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 failure after full staging cleans temporary file and leaves no final output",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 target created by another writer wins without overwrite",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 invalid PATHEXT is unknown and does not leak raw text",
+      "result": "Passed"
+    },
+    {
+      "name": "A12 observes already loaded module Cmdlets without importing anything for lookup",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 a non-filesystem current location is unknown and remains unchanged",
+      "result": "Passed"
+    },
+    {
+      "name": "A01 A02 A15 A17 independently captures A and B with stable keyId and different observations",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 real nested caller locals are unknown, not falsely absent",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 an unset preference is recorded as implicit All",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 concurrent first creators either share the winner key or fail closed and retry",
+      "result": "Passed"
+    },
+    {
+      "name": "A10 equal snapshots with literal Unicode filenames have no observed differences",
+      "result": "Passed"
+    },
+    {
+      "name": "A05 external candidate path identity changes",
+      "result": "Passed"
+    },
+    {
+      "name": "A04 ordered path fields preserve order: path",
+      "result": "Passed"
+    },
+    {
+      "name": "A04 ordered path fields preserve order: psModulePath",
+      "result": "Passed"
+    },
+    {
+      "name": "A16 path duplicate multiplicity is meaningful",
+      "result": "Passed"
+    },
+    {
+      "name": "A16 PATHEXT order duplicates and empty entries are preserved",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 one-sided unknown propagates without blocking independent fields",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 two unknown observations never count as equal",
+      "result": "Passed"
+    },
+    {
+      "name": "Unknown command observations propagate individually: internalCandidates",
+      "result": "Passed"
+    },
+    {
+      "name": "Unknown command observations propagate individually: externalCandidates",
+      "result": "Passed"
+    },
+    {
+      "name": "Unknown command observations propagate individually: aliases",
+      "result": "Passed"
+    },
+    {
+      "name": "Unknown command observations propagate individually: functions",
+      "result": "Passed"
+    },
+    {
+      "name": "A01 A02 absence versus presence differs: aliases",
+      "result": "Passed"
+    },
+    {
+      "name": "A01 A02 absence versus presence differs: functions",
+      "result": "Passed"
+    },
+    {
+      "name": "Explicit absence on both sides is equal",
+      "result": "Passed"
+    },
+    {
+      "name": "A03 Function compatible digests compare equal then different without source",
+      "result": "Passed"
+    },
+    {
+      "name": "Alias targets compare without following the target",
+      "result": "Passed"
+    },
+    {
+      "name": "A15 incompatible privacy metadata only blocks dependent identities: keyId",
+      "result": "Passed"
+    },
+    {
+      "name": "A15 incompatible privacy metadata only blocks dependent identities: redactionVersion",
+      "result": "Passed"
+    },
+    {
+      "name": "A15 incompatible privacy metadata only blocks dependent identities: redactionScheme",
+      "result": "Passed"
+    },
+    {
+      "name": "Explicit presence status is comparable without shared private identity",
+      "result": "Passed"
+    },
+    {
+      "name": "Command query array reordering produces identical reports",
+      "result": "Passed"
+    },
+    {
+      "name": "Missing query is unknown while common query continues",
+      "result": "Passed"
+    },
+    {
+      "name": "Case-distinct query HMACs are unmatched rather than guessed",
+      "result": "Passed"
+    },
+    {
+      "name": "Identical duplicate queries collapse and preserve occurrence counts",
+      "result": "Passed"
+    },
+    {
+      "name": "Conflicting duplicate queries are unknown",
+      "result": "Passed"
+    },
+    {
+      "name": "Candidate reordering is ignored but multiplicity retained: externalCandidates",
+      "result": "Passed"
+    },
+    {
+      "name": "Candidate reordering is ignored but multiplicity retained: internalCandidates",
+      "result": "Passed"
+    },
+    {
+      "name": "Explicit preference setting is part of scalar identity",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: schema",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: missing top-level",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: schema string",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: missing keyId",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: wrong commands type",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: wrong digest",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: wrong boolean",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: type is array",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: token kind is array",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: empty successful candidate array",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: digest newline",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: wrong array",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: unknown carries value",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: raw extra field",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: incorrect key casing",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: unknown reason",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "Unreadable missing input is a terminating input failure",
+      "result": "Passed"
+    },
+    {
+      "name": "Invalid UTF-8 fails without exposing parser details",
+      "result": "Passed"
+    },
+    {
+      "name": "Unsupported redaction versions are not assumed compatible even when equal",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 JSON and Markdown render the same structured mixed result",
+      "result": "Passed"
+    },
+    {
+      "name": "Markdown safely escapes syntax and preserves non-ASCII",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 A20 offline operation never calls discovery or secret helpers and leaves state unchanged",
+      "result": "Passed"
+    },
+    {
+      "name": "A11 discovery code has no dynamic command invocation or target process launcher",
+      "result": "Passed"
+    },
+    {
+      "name": "A11 native positive control detects actual launch through a disposable pwsh host",
+      "result": "Passed"
+    },
+    {
+      "name": "A11 Export discovers the native sentinel without starting it",
+      "result": "Passed"
+    },
+    {
+      "name": "A12 binary positive control proves exact discovery autoloads CimCmdlets in a fresh process",
+      "result": "Passed"
+    },
+    {
+      "name": "A12 binary positive control proves exact discovery autoloads Microsoft.PowerShell.ThreadJob in a fresh process",
+      "result": "Passed"
+    },
+    {
+      "name": "A12 actual Export leaves CimCmdlets unloaded and its assembly baseline unchanged",
+      "result": "Passed"
+    },
+    {
+      "name": "A12 actual Export leaves Microsoft.PowerShell.ThreadJob unloaded and its assembly baseline unchanged",
+      "result": "Passed"
+    },
+    {
+      "name": "A01 A03 A04 A05 actual independent captures produce expected end-to-end differences",
+      "result": "Passed"
+    },
+    {
+      "name": "A10 two independently exported identical fixtures have a wholly equal business summary",
+      "result": "Passed"
+    },
+    {
+      "name": "A09 final end-to-end artifacts return objects and errors contain no sensitive source or secret",
+      "result": "Passed"
+    }
+  ]
+}

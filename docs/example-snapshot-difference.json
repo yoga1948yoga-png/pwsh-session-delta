@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "capture": {
+    "model": "current-session",
+    "discoveryPolicyVersion": 1
+  },
+  "privacy": {
+    "keyId": "567777d6d870567a0a7488fe949a4092b967ce9a61d801b0e8fadfab3e966f17",
+    "redactionScheme": "HMAC-SHA256",
+    "redactionVersion": 1
+  },
+  "observations": {
+    "powerShellVersion": {
+      "status": "Confirmed observation",
+      "reasonCode": null,
+      "value": "7.6.4"
+    },
+    "workingDirectory": {
+      "status": "Confirmed observation",
+      "reasonCode": null,
+      "value": {
+        "kind": "path",
+        "digest": "b225974e1d9255deb8260dae81cac7276c459673699066fdd3d8c7cd0396c73d"
+      }
+    },
+    "path": {
+      "status": "Unable to determine",
+      "reasonCode": "EnvironmentReadFailed",
+      "value": null
+    },
+    "psModulePath": {
+      "status": "No observed value",
+      "reasonCode": null,
+      "value": null
+    },
+    "pathExt": {
+      "status": "Confirmed observation",
+      "reasonCode": null,
+      "value": [
+        ".EXE",
+        ".CMD",
+        ".BAT"
+      ]
+    },
+    "moduleAutoLoadingPreference": {
+      "status": "Confirmed observation",
+      "reasonCode": null,
+      "value": {
+        "effectiveValue": "All",
+        "explicitlySet": false
+      }
+    }
+  },
+  "commands": [
+    {
+      "query": {
+        "kind": "command",
+        "digest": "7180b5f042fbab1e234209ac58ae449e95746ce8366b5f03f754e1845c27b9c3"
+      },
+      "internalCandidates": {
+        "status": "No observed value",
+        "reasonCode": null,
+        "value": null
+      },
+      "aliases": {
+        "status": "No observed value",
+        "reasonCode": null,
+        "value": null
+      },
+      "functions": {
+        "status": "No observed value",
+        "reasonCode": null,
+        "value": null
+      },
+      "externalCandidates": {
+        "status": "Confirmed observation",
+        "reasonCode": null,
+        "value": [
+          {
+            "type": "Application",
+            "path": {
+              "kind": "path",
+              "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "name": {
+              "kind": "command",
+              "digest": "1e62a4db7ddba5a951f02dd710523bcef10ee87a9098b204b281c6bff7a7bfc1"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

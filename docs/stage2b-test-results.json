@@ -1,0 +1,238 @@
+{
+  "stage": "2B",
+  "powerShell": "7.6.5",
+  "pester": "5.9.0",
+  "passed": 57,
+  "failed": 0,
+  "skipped": 0,
+  "tests": [
+    {
+      "name": "A10 equal snapshots with literal Unicode filenames have no observed differences",
+      "result": "Passed"
+    },
+    {
+      "name": "A05 external candidate path identity changes",
+      "result": "Passed"
+    },
+    {
+      "name": "A04 ordered path fields preserve order: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "A04 ordered path fields preserve order: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "A16 path duplicate multiplicity is meaningful",
+      "result": "Passed"
+    },
+    {
+      "name": "A16 PATHEXT order duplicates and empty entries are preserved",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 one-sided unknown propagates without blocking independent fields",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 two unknown observations never count as equal",
+      "result": "Passed"
+    },
+    {
+      "name": "Unknown command observations propagate individually: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "Unknown command observations propagate individually: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "Unknown command observations propagate individually: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "Unknown command observations propagate individually: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "A01 A02 absence versus presence differs: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "A01 A02 absence versus presence differs: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "Explicit absence on both sides is equal",
+      "result": "Passed"
+    },
+    {
+      "name": "A03 Function compatible digests compare equal then different without source",
+      "result": "Passed"
+    },
+    {
+      "name": "Alias targets compare without following the target",
+      "result": "Passed"
+    },
+    {
+      "name": "A15 incompatible privacy metadata only blocks dependent identities: <Part>",
+      "result": "Passed"
+    },
+    {
+      "name": "A15 incompatible privacy metadata only blocks dependent identities: <Part>",
+      "result": "Passed"
+    },
+    {
+      "name": "A15 incompatible privacy metadata only blocks dependent identities: <Part>",
+      "result": "Passed"
+    },
+    {
+      "name": "Explicit presence status is comparable without shared private identity",
+      "result": "Passed"
+    },
+    {
+      "name": "Command query array reordering produces identical reports",
+      "result": "Passed"
+    },
+    {
+      "name": "Missing query is unknown while common query continues",
+      "result": "Passed"
+    },
+    {
+      "name": "Case-distinct query HMACs are unmatched rather than guessed",
+      "result": "Passed"
+    },
+    {
+      "name": "Identical duplicate queries collapse and preserve occurrence counts",
+      "result": "Passed"
+    },
+    {
+      "name": "Conflicting duplicate queries are unknown",
+      "result": "Passed"
+    },
+    {
+      "name": "Candidate reordering is ignored but multiplicity retained: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "Candidate reordering is ignored but multiplicity retained: <Name>",
+      "result": "Passed"
+    },
+    {
+      "name": "Explicit preference setting is part of scalar identity",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 rejects invalid structure: <Label>",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 malformed JSON and exact or case-conflicting duplicate keys fail",
+      "result": "Passed"
+    },
+    {
+      "name": "Unreadable missing input is a terminating input failure",
+      "result": "Passed"
+    },
+    {
+      "name": "Invalid UTF-8 fails without exposing parser details",
+      "result": "Passed"
+    },
+    {
+      "name": "Unsupported redaction versions are not assumed compatible even when equal",
+      "result": "Passed"
+    },
+    {
+      "name": "A19 JSON and Markdown render the same structured mixed result",
+      "result": "Passed"
+    },
+    {
+      "name": "Markdown safely escapes syntax and preserves non-ASCII",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 A20 offline operation never calls discovery or secret helpers and leaves state unchanged",
+      "result": "Passed"
+    }
+  ]
+}

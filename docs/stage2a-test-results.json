@@ -1,0 +1,154 @@
+{
+  "stage": "2A",
+  "powerShell": "7.6.5",
+  "pester": "5.9.0",
+  "passed": 35,
+  "failed": 0,
+  "skipped": 1,
+  "tests": [
+    {
+      "name": "A20 creates a 32-byte protected secret and versioned UTF-8 JSON",
+      "result": "Passed"
+    },
+    {
+      "name": "A01 captures an alias only while it exists without resolving it",
+      "result": "Passed"
+    },
+    {
+      "name": "A02 A03 hashes function source stably and does not expose or execute it",
+      "result": "Passed"
+    },
+    {
+      "name": "A04 A07 A08 A16 preserves PATH order duplicate entries spaces Chinese and empty entries",
+      "result": "Passed"
+    },
+    {
+      "name": "A06 distinguishes successful absence from unknown",
+      "result": "Passed"
+    },
+    {
+      "name": "A09 excludes original path command source and secret encodings",
+      "result": "Passed"
+    },
+    {
+      "name": "A11 discovers scripts and batch files without executing body or dynamicparam",
+      "result": "Passed"
+    },
+    {
+      "name": "A11 native process launch detection remains a release gate",
+      "result": "Skipped"
+    },
+    {
+      "name": "A12 never autoloads an unloaded synthetic module and leaves loaded modules unchanged",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 a lookup exception produces unknown while other observations succeed",
+      "result": "Passed"
+    },
+    {
+      "name": "A14 keeps duplicate executable candidates but excludes prefix lookalikes",
+      "result": "Passed"
+    },
+    {
+      "name": "A15 repeated exports reuse keyId and stable command pseudonyms",
+      "result": "Passed"
+    },
+    {
+      "name": "A14 retains same-name alias and function independently of external candidates",
+      "result": "Passed"
+    },
+    {
+      "name": "A16 distinguishes missing versus empty process environment and preserves PSModulePath entries",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 preserves process paths and autoload preference",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 unavailable caller scope is unknown rather than absent",
+      "result": "Passed"
+    },
+    {
+      "name": "A18 treats wildcard syntax literally and marks external completeness unknown",
+      "result": "Passed"
+    },
+    {
+      "name": "A18 rejects unsupported command input without lookup",
+      "result": "Passed"
+    },
+    {
+      "name": "A18 rejects an unsafe external search path but retains internal observations",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 refuses to overwrite existing output and secret",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 fails closed for existing state without key or with corrupt key",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 rejects permissive ACL and simulated unreadable secret without replacement",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 leaves no final file when serialization fails",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 corrupt but otherwise protected secret fails closed",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 exclusive reader lock causes safe failure without replacement",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 same-length key corruption or a missing integrity marker fails closed",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 a real broad ACL on a test-only key is rejected and not repaired",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 failure after full staging cleans temporary file and leaves no final output",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 target created by another writer wins without overwrite",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 invalid PATHEXT is unknown and does not leak raw text",
+      "result": "Passed"
+    },
+    {
+      "name": "A12 observes already loaded module Cmdlets without importing anything for lookup",
+      "result": "Passed"
+    },
+    {
+      "name": "A13 a non-filesystem current location is unknown and remains unchanged",
+      "result": "Passed"
+    },
+    {
+      "name": "A01 A02 A15 A17 independently captures A and B with stable keyId and different observations",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 real nested caller locals are unknown, not falsely absent",
+      "result": "Passed"
+    },
+    {
+      "name": "A17 an unset preference is recorded as implicit All",
+      "result": "Passed"
+    },
+    {
+      "name": "A20 concurrent first creators either share the winner key or fail closed and retry",
+      "result": "Passed"
+    }
+  ]
+}
