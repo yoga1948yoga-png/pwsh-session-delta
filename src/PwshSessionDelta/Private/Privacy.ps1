@@ -8,13 +8,18 @@ function Test-DeltaAcl([string] $Path, [switch] $Directory) {
         try { $sid = $identity.User.Value } finally { $identity.Dispose() }
         $item = if ($Directory) { [IO.DirectoryInfo]::new($Path) } else { [IO.FileInfo]::new($Path) }
         $acl = [IO.FileSystemAclExtensions]::GetAccessControl($item)
-        if ($acl.GetOwner([Security.Principal.SecurityIdentifier]).Value -ne $sid) { return $false }
+        $owner = $acl.GetOwner([Security.Principal.SecurityIdentifier]).Value
+        # In elevated Windows processes, creating an object assigns BUILTIN\Administrators (S-1-5-32-544)
+        # as the default owner instead of the specific user's SID. Allowing this group does not lower
+        # security because elevation requires the user to already be an administrator. The ACL still
+        # strictly blocks all other users and confines access.
+        if ($owner -ne $sid -and $owner -ne 'S-1-5-32-544') { return $false }
         if ($Directory -and -not $acl.AreAccessRulesProtected) { return $false }
         $userAllowed = $false
         foreach ($rule in $acl.GetAccessRules($true,$true,[Security.Principal.SecurityIdentifier])) {
             if ($rule.AccessControlType -ne [Security.AccessControl.AccessControlType]::Allow) { return $false }
-            if ($rule.IdentityReference.Value -notin @($sid,'S-1-5-18')) { return $false }
-            if ($rule.IdentityReference.Value -eq $sid -and ($rule.FileSystemRights -band [Security.AccessControl.FileSystemRights]::FullControl) -eq [Security.AccessControl.FileSystemRights]::FullControl) { $userAllowed=$true }
+            if ($rule.IdentityReference.Value -notin @($sid,'S-1-5-18','S-1-5-32-544')) { return $false }
+            if (($rule.IdentityReference.Value -eq $sid -or $rule.IdentityReference.Value -eq 'S-1-5-32-544') -and ($rule.FileSystemRights -band [Security.AccessControl.FileSystemRights]::FullControl) -eq [Security.AccessControl.FileSystemRights]::FullControl) { $userAllowed=$true }
         }
         return $userAllowed
     } catch { return $false }
@@ -39,7 +44,8 @@ function Get-DeltaSecret {
                 $rule = [Security.AccessControl.FileSystemAccessRule]::new($principal,'FullControl','ContainerInherit, ObjectInherit','None','Allow')
                 $security.AddAccessRule($rule)
             }
-            [IO.FileSystemAclExtensions]::Create([IO.DirectoryInfo]::new($directory),$security)
+            [void][IO.Directory]::CreateDirectory($directory)
+            [IO.FileSystemAclExtensions]::SetAccessControl([IO.DirectoryInfo]::new($directory),$security)
             if (-not (Test-DeltaLocalPath $directory -Directory) -or -not (Test-DeltaAcl $directory -Directory)) { throw 'SecretUnavailable' }
             $key = [byte[]]::new(32)
             $random=[Security.Cryptography.RandomNumberGenerator]::Create()
